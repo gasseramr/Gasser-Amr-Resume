@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasser Amr Eldabaa - CV</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e3f2fd, #90caf9);
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(to right, #1e88e5, #42a5f5);
+            color: #fff;
+            padding: 20px;
+            border-radius: 12px 12px 0 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+        }
+
+        .section-button {
+            display: block;
+            background: linear-gradient(to right, #42a5f5, #64b5f6);
+            color: #fff;
+            border: none;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+            text-align: left;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .section-button:hover {
+            background: linear-gradient(to right, #1e88e5, #42a5f5);
+            transform: translateY(-3px);
+        }
+
+        .section-content {
+            display: none;
+            margin: 15px 0;
+            padding-left: 20px;
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li:before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            color: #1e88e5;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+
+        a {
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleSection(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gasser Amr Eldabaa</h1>
+            <p>+0201021248754 | <a href="mailto:gogo49694@gmail.com">gogo49694@gmail.com</a> | Sheikh Zayed</p>
+            <p><a href="https://github.com/gasseramr/System-Health-Project" target="_blank">GitHub Profile</a></p>
+        </header>
+
+        <button class="section-button" onclick="toggleSection('summary')">Professional Summary</button>
+        <div class="section-content" id="summary">
+            <p>Dependable professional seeking opportunities to expand skills in software engineering and data analysis. Experienced in SQL, SAS, and web development with a focus on delivering quality results and driving team success.</p>
+        </div>
+
+        <button class="section-button" onclick="toggleSection('skills')">Skills</button>
+        <div class="section-content" id="skills">
+            <ul>
+                <li>Strong organizational and time-management skills</li>
+                <li>Exceptional communication and interpersonal skills</li>
+                <li>Proficient in coding (HTML, CSS, JavaScript, SQL)</li>
+                <li>Data analytics and visualization (SAS, Microsoft BI Platforms)</li>
+                <li>Team collaboration and leadership</li>
+                <li>Problem-solving and adaptability</li>
+            </ul>
+        </div>
+
+        <button class="section-button" onclick="toggleSection('experience')">Work Experience</button>
+        <div class="section-content" id="experience">
+            <h3>Data Analyst Intern</h3>
+            <p><strong>Arab Academy for Management, Banking and Financial Sciences</strong> | 2023 – 2024</p>
+            <ul>
+                <li>Performed analytics using SQL and presented results in clear business reports.</li>
+                <li>Streamlined data cleaning processes using SAS language.</li>
+                <li>Designed and maintained business-oriented databases and spreadsheets.</li>
+            </ul>
+
+            <h3>Software Engineering Intern</h3>
+            <p><strong>Sphinx Tech Comp</strong> | 2023</p>
+            <ul>
+                <li>Reviewed and validated code to meet project specifications.</li>
+                <li>Collaborated with QA teams to resolve errors and improve software quality.</li>
+                <li>Developed and maintained high-quality software solutions.</li>
+            </ul>
+
+            <h3>Social Media Marketing Intern</h3>
+            <p><strong>AMH Solution for Business Technology</strong> | 2022 – 2023</p>
+            <ul>
+                <li>Analyzed digital performance metrics to optimize campaigns.</li>
+                <li>Improved lead generation through targeted social media strategies.</li>
+                <li>Managed Google Ads campaigns to achieve B2B and B2C conversions.</li>
+            </ul>
+        </div>
+
+        <button class="section-button" onclick="toggleSection('education')">Education</button>
+        <div class="section-content" id="education">
+            <p><strong>Arab Academy for Science, Business, Technology and Maritime</strong></p>
+            <p>Software Engineering | 2022 – 2026</p>
+        </div>
+
+        <button class="section-button" onclick="toggleSection('certifications')">Certifications & Training</button>
+        <div class="section-content" id="certifications">
+            <ul>
+                <li>SAS Programming 1: Essentials (August 6, 2023)</li>
+                <li>HP LIFE - Social Media Marketing (September 7, 2023)</li>
+                <li>HP LIFE - Data Science & Analytics (October 16, 2023)</li>
+                <li>Computer Network Fundamentals</li>
+                <li>Microsoft BI Platforms</li>
+                <li>Professional Training at UAB University Spain</li>
+                <li>Excel Analytics Course</li>
+                <li>Business Applications of Hypothesis Testing and Confidence Interval Estimation</li>
+                <li>Basic Data Descriptors, Statistical Distributions, and Application to Business Decisions</li>
+            </ul>
+        </div>
+
+        <button class="section-button" onclick="toggleSection('projects')">Projects</button>
+        <div class="section-content" id="projects">
+            <ul>
+                <li>Developed a jail system in Java.</li>
+                <li>Created a chess game with AI using Python.</li>
+                <li>Developed a Tic-Tac-Toe (XO) game using Python.</li>
+                <li>Built two responsive websites using HTML, CSS, and JavaScript.</li>
+                <li>Designed a database management system for small-scale inventory tracking.</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Gasser Amr Eldabaa. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
